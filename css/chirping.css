@@ -14,11 +14,12 @@ html , body{
     --black:#14171A;
 }
 body{
-
+    height: 100vh;
+    max-height: 100%;
     display: grid;
     grid-template:
              "features options" 1fr
-             "footer footer" 10vh / repeat(2,1fr);
+             "footer footer" 10vh / 1fr 1fr;
     background: #fff;
     width: 100vw;
     max-width: 100%;
@@ -26,13 +27,31 @@ body{
 }
 
 .features{
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-area: features;
     background: #71C9F8;
+    color: #fff;
+    background-image: url(../media/twitter-fill.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100%;
+    background-attachment: fixed;
+
 }
+
+.feature-list .feature{
+    display: flex;
+    align-items: center;
+    margin-bottom:1.5rem;
+
+}
+
 
 .options{
     grid-area: options;
+
 }
 
 .footer {
