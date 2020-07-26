@@ -19,7 +19,7 @@ body{
     display: grid;
     grid-template:
              "features options" 1fr
-             "footer footer" 10vh / 1fr 1fr;
+             "footer footer" 5vh / 1fr 1fr;
     background: #fff;
     width: 100vw;
     max-width: 100%;
@@ -81,6 +81,23 @@ body{
 
 .footer {
     grid-area: footer;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.footer .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.footer a{
+    text-decoration: none;
+    color: #6B7C8B;
+
+}
+.footer a:hover{
+    text-decoration: underline;
 }
 
