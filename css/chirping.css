@@ -51,7 +51,32 @@ body{
 
 .options{
     grid-area: options;
+    
 
+
+}
+.options .contents{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.contents .login-form{
+    display: flex;
+    margin-bottom: 3rem;
+    
+}
+.login-form .login{
+    align-self: center;
+}
+
+.contents .signup{
+    display: flex;
+    flex-direction: column;
+}
+.signup form{
+    display: flex;
+    flex-direction: column;
 }
 
 .footer {
