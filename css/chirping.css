@@ -44,10 +44,14 @@ body{
 .feature-list .feature{
     display: flex;
     align-items: center;
-    margin-bottom:3rem;
+    margin-bottom:5rem;
+    font-size:1.27rem ;
+    font-weight: 700;
 
 }
-
+.feature img{
+    margin-right: 1.5rem;
+}
 
 .options{
     grid-area: options;
@@ -65,6 +69,30 @@ body{
     display: flex;
     margin-bottom: 3rem;
     
+}
+.login-form .form-group{
+    display: flex;
+    flex-direction: column;
+    height:30px;
+    margin-right: 2rem;
+    
+}
+.login-form .form-group a{
+    text-decoration: none;
+    color:var(--blue);
+}
+.login-form .form-group a:hover{
+    text-decoration: underline;
+}
+.form-group .password-input{
+    display: flex;
+    flex-direction: column;
+}
+.login-form .button-container{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
 }
 .login-form .login{
     align-self: center;
@@ -85,18 +113,22 @@ body{
     align-items: center;
     justify-content: center;
     width: 100vw;
+
+
 }
 .footer .content{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 
 }
+
 .footer a{
     text-decoration: none;
     color: #6B7C8B;
     margin-right: 1rem;
-    font-size: .83rem;
+    font-size: .87rem;
     font-weight: 400;
 
 }
