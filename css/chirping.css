@@ -44,28 +44,33 @@ body{
 .feature-list .feature{
     display: flex;
     align-items: center;
-    margin-bottom:5rem;
+    margin-bottom:4.5rem;
     font-size:1.27rem ;
     font-weight: 700;
 
 }
+
 .feature img{
     margin-right: 1.5rem;
+    width: 28px;
+    height: 28px;
 }
 
+.feature span{
+    font-size:1.27rem ;
+    font-weight: 700;
+}
 .options{
     grid-area: options;
-    
-    
-
 
 }
+
 .options .contents{
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding-left:4.2rem;
+    padding-left:6.4rem;
 }
 .contents .login-form{
     display: flex;
@@ -87,6 +92,7 @@ body{
     color: #84939F;
     padding:.4rem 0 .1rem .6rem;
 }
+
 .login-form .form-group input{
     outline:none;
     border: none;
@@ -97,6 +103,12 @@ body{
     color: var(--black);
     border-bottom: 2px solid #657786;
 
+}
+.form-group input.focus{
+    border: 1px solid var(--blue);
+}
+.form-group label.caption{
+    color:var(--blue);
 }
 .login-form .form-group a{
     
@@ -121,16 +133,19 @@ body{
     
 }
 .login-form .login{
- padding: .7rem 1rem;
- border-radius: 20px;
- border:1px solid var(--blue);
- background: #fff;
- color: var(--blue);
- font-size:1rem;
- font-weight: 700;
+    padding: .7rem 1rem;
+    border-radius: 20px;
+    border:1px solid var(--blue);
+    background: #fff;
+    color: var(--blue);
+    font-size:1rem;
+    font-weight: 700;
+    cursor: pointer;
  
 }
-
+.login-form .login:hover{
+    background: #E8F0FE;
+}
 .contents .signup{
     display: flex;
     flex-direction: column;
@@ -162,7 +177,7 @@ body{
     padding: .8rem 0;
     border:1px solid var(--blue);
     font-weight: 700;
-    
+    cursor: pointer;
 }
 .signup-login-button form button:first-child{
     border: none;
