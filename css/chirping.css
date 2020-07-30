@@ -61,22 +61,22 @@ body{
 
 }
 .options .contents{
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-
+    padding-left:4.2rem;
 }
 .contents .login-form{
     display: flex;
-    margin-bottom: 10rem;
+    margin-bottom: 7.5rem;
     
 }
 .login-form .form-group{
     display: flex;
     flex-direction: column;
-    width:223px;
     padding: 1rem .5rem;
+    width:223px;
     
 }
 
@@ -99,9 +99,11 @@ body{
 
 }
 .login-form .form-group a{
+    
     text-decoration: none;
     color:var(--blue);
     margin-top: .5rem;
+
 }
 .login-form .form-group a:hover{
     text-decoration: underline;
@@ -116,11 +118,11 @@ body{
     align-items: flex-end;
     padding-top:4rem;
     margin-left: .7rem;
-    /* justify-content: center; */
+    
 }
 .login-form .login{
- padding: .7rem 1.2rem;
- border-radius: 15px;
+ padding: .7rem 1rem;
+ border-radius: 20px;
  border:1px solid var(--blue);
  background: #fff;
  color: var(--blue);
@@ -134,24 +136,43 @@ body{
     flex-direction: column;
     width: 380px;
 }
+.signup .quote-logo img{
+    width: 46px;
+    height: 46px;
+}
 .signup .quote-logo p{
     font-size:2rem ;
     font-weight:700;
-}
-.signup-login-button span{
-    font-weight: 1rem;
-    font-size:700;
-    margin-bottom:.6rem;
+    margin:1.2rem 0 4.5rem;
 }
 
+.signup-login-button span{
+    font-size:1rem;
+    font-weight: 700;
+    
+}
 .signup form{
+    margin-top:1rem;
     display: flex;
     flex-direction: column;
 }
-.signup-login-button buttton{
-    margin-bottom:.6rem;
-    border-radius: 15px;
-    padding: .6rem 0;
+.signup-login-button button{
+    margin-bottom:1rem;
+    border-radius: 20px;
+    padding: .8rem 0;
+    border:1px solid var(--blue);
+    font-weight: 700;
+    
+}
+.signup-login-button form button:first-child{
+    border: none;
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.signup-login-button form button:last-child{
+    background-color: #fff;
+    color: var(--blue);
 }
 .footer {
     grid-area: footer;
