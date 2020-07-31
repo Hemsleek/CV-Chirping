@@ -184,11 +184,21 @@ body{
     background-color: var(--blue);
     color: #fff;
 }
-
+.signup-login-button form button:hover:first-child{
+    
+    background-color:#084b75 ;
+    
+}
 .signup-login-button form button:last-child{
     background-color: #fff;
     color: var(--blue);
 }
+
+.signup-login-button form button:hover:last-child{
+    background-color: #E8F0FE;
+    
+}
+
 .footer {
     grid-area: footer;
     display: flex;
