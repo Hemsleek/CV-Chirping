@@ -1,32 +1,31 @@
-html , body{
-    margin:0;
+html,
+body {
+    margin: 0;
     padding: 0;
 }
-*{
+
+* {
     box-sizing: border-box;
 }
-:root{
+
+:root {
     font-size: 15px;
-    
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-    --blue:#1DA1F2;
-    --black:#14171A;
+    --blue: #1DA1F2;
+    --black: #14171A;
 }
-body{
+
+body {
     height: 100vh;
     max-height: 100%;
     display: grid;
-    grid-template:
-             "features options" 1fr
-             "footer footer" 5vh / 1fr 1fr;
+    grid-template: "features options" 1fr "footer footer" 5vh / 1fr 1fr;
     background: #fff;
     width: 100vw;
     max-width: 100%;
-
 }
 
-.features{
+.features {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,165 +37,170 @@ body{
     background-position: right;
     background-size: 100%;
     background-attachment: fixed;
-
 }
 
-.feature-list .feature{
+.feature-list .feature {
     display: flex;
     align-items: center;
-    margin-bottom:4.5rem;
-    font-size:1.27rem ;
+    margin-bottom: 4.5rem;
+    font-size: 1.27rem;
     font-weight: 700;
-
 }
 
-.feature img{
+.feature img {
     margin-right: 1.5rem;
     width: 28px;
     height: 28px;
 }
 
-.feature span{
-    font-size:1.27rem ;
+.feature span {
+    font-size: 1.27rem;
     font-weight: 700;
 }
-.options{
-    grid-area: options;
 
+.options {
+    grid-area: options;
 }
 
-.options .contents{
+.options .contents {
     width: 70%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding-left:6.4rem;
+    padding-left: 6.4rem;
 }
-.contents .login-form{
+
+.contents .login-form {
     display: flex;
     margin-bottom: 7.5rem;
-    
 }
-.login-form .form-group{
+
+.login-form .form-group {
     display: flex;
     flex-direction: column;
     padding: 1rem .5rem;
-    width:223px;
-    
+    width: 223px;
 }
 
-.login-form label{
+.login-form label {
     background-color: #F5F8FA;
-    font-size:1rem ;
+    font-size: 1rem;
     font-weight: 400;
     color: #84939F;
-    padding:.4rem 0 .1rem .6rem;
+    padding: .4rem 0 .1rem .6rem;
 }
 
-.login-form .form-group input{
-    outline:none;
+.login-form .form-group input {
+    outline: none;
     border: none;
     background: #E8F0FE;
     padding: .3rem.6rem;
-    font-size:1.27rem ;
-    font-weight:400;
+    font-size: 1.27rem;
+    font-weight: 400;
     color: var(--black);
     border-bottom: 2px solid #657786;
-
 }
-.form-group input.focus{
+
+.form-group input.focus {
     border-bottom: 2px solid var(--blue);
 }
-.form-group label.caption{
-    color:var(--blue);
-}
-.login-form .form-group a{
-    
-    text-decoration: none;
-    color:var(--blue);
-    margin-top: .5rem;
 
+.form-group label.caption {
+    color: var(--blue);
 }
-.login-form .form-group a:hover{
+
+.login-form .form-group a {
+    text-decoration: none;
+    color: var(--blue);
+    margin-top: .5rem;
+}
+
+.login-form .form-group a:hover {
     text-decoration: underline;
 }
-.form-group .password-input{
+
+.form-group .password-input {
     display: flex;
     flex-direction: column;
 }
-.login-form .button-container{
+
+.login-form .button-container {
     height: 36px;
     display: flex;
     align-items: flex-end;
-    padding-top:4rem;
+    padding-top: 4rem;
     margin-left: .7rem;
-    
 }
-.login-form .login{
+
+.login-form .login {
     padding: .7rem 1rem;
     border-radius: 20px;
-    border:1px solid var(--blue);
+    border: 1px solid var(--blue);
     background: #fff;
     color: var(--blue);
-    font-size:1rem;
+    font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
- 
 }
-.login-form .login:hover{
+
+.login-form .login:hover {
     background: #E8F0FE;
 }
-.contents .signup{
+
+.contents .signup {
     display: flex;
     flex-direction: column;
     width: 380px;
 }
-.signup .quote-logo img{
+
+.signup .quote-logo img {
     width: 46px;
     height: 46px;
 }
-.signup .quote-logo p{
-    font-size:2rem ;
-    font-weight:700;
-    margin:1.2rem 0 4.5rem;
+
+.signup .quote-logo p {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1.2rem 0 4.5rem;
 }
 
-.signup-login-button span{
-    font-size:1rem;
+.signup-login-button span {
+    font-size: 1rem;
     font-weight: 700;
-    
 }
-.signup form{
-    margin-top:1rem;
+
+.signup form {
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
 }
-.signup-login-button button{
-    margin-bottom:1rem;
+
+.signup-login-button button {
+    margin-bottom: 1rem;
     border-radius: 20px;
     padding: .8rem 0;
-    border:1px solid var(--blue);
+    border: 1px solid var(--blue);
     font-weight: 700;
     cursor: pointer;
 }
-.signup-login-button form button:first-child{
+
+.signup-login-button form button:first-child {
     border: none;
     background-color: var(--blue);
     color: #fff;
 }
-.signup-login-button form button:hover:first-child{
-    
-    background-color:#084b75;
-    
+
+.signup-login-button form button:hover:first-child {
+    background-color: #084b75;
 }
-.signup-login-button form button:last-child{
+
+.signup-login-button form button:last-child {
     background-color: #fff;
     color: var(--blue);
 }
 
-.signup-login-button form button:hover:last-child{
+.signup-login-button form button:hover:last-child {
     background-color: #E8F0FE;
-    
 }
 
 .footer {
@@ -205,26 +209,22 @@ body{
     align-items: center;
     justify-content: center;
     width: 100vw;
-
-
 }
-.footer .content{
+
+.footer .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-
 }
 
-.footer a{
+.footer a {
     text-decoration: none;
     color: #6B7C8B;
     margin-right: 1rem;
     font-size: .87rem;
     font-weight: 400;
-
 }
-.footer a:hover{
+
+.footer a:hover {
     text-decoration: underline;
 }
-

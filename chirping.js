@@ -13,27 +13,31 @@ const formElement = document.getElementById("form-element")
 
 /*event listeners and triggers*/
 formElement.addEventListener('focus', e => {
-        if (!e.target.dataset.select) return;
-
-        else {
+        e.preventDefault();
+        if (e.target.dataset.select) {
 
             if (e.target.dataset.select == "input1") {
 
-                e.target.classList.add('focus');
+                // e.target.classList.add('focus');
+                console.log('input');
                 labelElement.classList.add('caption');
 
             } else if (e.target.dataset.select == "input2") {
-                e.target.classList.add('focus');
+                // e.target.classList.add('focus');
+                console.log('input23');
+
                 labelElement2.classList.remove('caption');
 
             }
+        } else {
+            return;
         }
 
         // inputElement.classList.add('focus');
         // labelElement.classList.add('caption');
     })
     // inputElement2.addEventListener('focus', e => {})
-inputElement.addEventListener('focusout', e => {})
+    // inputElement.addEventListener('focusout', e => {})
 inputElement2.addEventListener('focusout', e => {
     inputElement2.classList.remove('focus');
     labelElement2.classList.remove('caption');
