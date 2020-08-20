@@ -209,4 +209,43 @@ body {
 
 .content .trends-container {
     grid-area: trends;
+    padding: .5rem .3rem .5rem 0;
+}
+
+.trends-container .search-box {
+    background-color: #E6ECF0;
+    width: 100%;
+    display: flex;
+    border-radius: 30px;
+    padding: .5rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.search-box input {
+    border: none;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-left: 1rem;
+    color: #14171a;
+    padding: .2rem 0;
+    background-color: #E6ECF0;
+}
+
+.search-box input:focus {
+    outline: none;
+}
+
+.trends-container .trends {
+    border-radius: 10px;
+    background-color: #F5F8FA;
+    padding: .5rem 0;
+    width: 100%;
+    color: black;
+}
+
+.trends header {
+    padding: .5rem 1rem;
+    font-weight: 800;
+    font-size: 1.27rem;
+    border-bottom: .5px solid #E6ECF0;
 }
