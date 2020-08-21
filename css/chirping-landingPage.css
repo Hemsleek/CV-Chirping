@@ -218,7 +218,7 @@ body {
     display: flex;
     border-radius: 30px;
     padding: .5rem 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .search-box input {
@@ -236,16 +236,60 @@ body {
 }
 
 .trends-container .trends {
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: #F5F8FA;
     padding: .5rem 0;
     width: 100%;
-    color: black;
+    --border: .5px solid #E6ECF0;
 }
 
 .trends header {
+    color: black;
     padding: .5rem 1rem;
     font-weight: 800;
     font-size: 1.27rem;
-    border-bottom: .5px solid #E6ECF0;
+    border-bottom: var(--border);
+}
+
+.trends a:not(:last-of-type) {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #727D86;
+    font-weight: 400;
+    font-size: .87rem;
+    border-bottom: var(--border);
+    padding: .6rem 1rem;
+}
+
+.trends a .texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.trends a .name {
+    color: black;
+    margin: .5rem 0 .8rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.trends a:last-of-type {
+    text-decoration: none;
+    display: flex;
+}
+
+.trends a .show-more {
+    color: var(--blue);
+    padding: .6rem 1rem;
+    margin: .3rem 0;
+}
+
+.trends a img[alt="arrow-down"] {
+    align-self: flex-start;
+}
+
+.trends a:hover {
+    background-color: #ebf1f6;
 }
