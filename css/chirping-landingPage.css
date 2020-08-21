@@ -213,13 +213,24 @@ body {
     --border: .5px solid #E6ECF0;
 }
 
+.trends-container .search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    width: 27.6%;
+    top: 0;
+    padding: .5rem 0;
+    z-index: 5;
+    margin-bottom: 1rem;
+}
+
 .trends-container .search-box {
     background-color: #E6ECF0;
     width: 100%;
     display: flex;
     border-radius: 30px;
     padding: .5rem 1rem;
-    margin-bottom: 1rem;
 }
 
 .search-box input {
@@ -241,7 +252,8 @@ body {
     background-color: #F5F8FA;
     padding: .5rem 0;
     width: 100%;
-    margin-bottom: 1rem;
+    margin: 3.5rem 0 1rem;
+    border: none;
 }
 
 header {
@@ -293,7 +305,7 @@ header {
 
 .trends a:hover,
 .follow-suggestions .option:hover {
-    background-color: #ebf1f6;
+    background-color: #E6ECF0;
     cursor: pointer;
 }
 
@@ -356,7 +368,7 @@ header {
 
 .option .follow:hover {
     cursor: pointer;
-    background: #e6f2fa;
+    background: #e0ebf0;
 }
 
 .follow-suggestions .option img[alt="profile-pic"] {
