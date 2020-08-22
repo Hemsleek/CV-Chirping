@@ -90,8 +90,11 @@ body {
     grid-area: side-nav;
     position: fixed;
     height: 100%;
-    overflow-y: auto;
     width: 20%;
+}
+
+.side-nav:hover {
+    overflow-y: auto;
 }
 
 .side-nav a {
@@ -204,7 +207,38 @@ body {
 }
 
 .content .main-content {
+    --grey: #E6ECF0;
+    --black: #14171a;
     grid-area: main-content;
+    border: 1px solid var(--grey);
+    border-top: none;
+    border-bottom: none;
+    margin: 0 1rem 0 .5rem;
+}
+
+.main-content .header {
+    height: 58px;
+    background: #fff;
+    cursor: pointer;
+    padding: 0 .8rem;
+    border-bottom: 1px solid var(--grey);
+}
+
+.header span {
+    color: var(--black);
+    font-weight: 800;
+    font-size: 1.27rem;
+}
+
+.header .img-container {
+    width: max-content;
+    height: max-content;
+    padding: .5rem .6rem;
+    border-radius: 50%;
+}
+
+.header .img-container:hover {
+    background-color: #e6f2fa;
 }
 
 .content .trends-container {
