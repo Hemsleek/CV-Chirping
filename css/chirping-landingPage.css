@@ -91,9 +91,6 @@ body {
     position: fixed;
     height: 100%;
     width: 20%;
-}
-
-.side-nav:hover {
     overflow-y: auto;
 }
 
@@ -198,6 +195,7 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    border: 1px solid #E6ECF0;
 }
 
 .side-nav .text {
@@ -239,6 +237,73 @@ body {
 
 .header .img-container:hover {
     background-color: #e6f2fa;
+}
+
+.main-content .user-tweet {
+    padding: .6rem .8rem;
+    height: 25vh;
+    border-bottom: 10px solid #E6ECF0;
+}
+
+.main-content .user-tweet .profile-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--grey);
+    cursor: pointer;
+}
+
+.main-content .user-tweet .profile-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.main-content .user-tweet .profile-container:hover {
+    background: var(--grey);
+}
+
+.post-tweet-button .icons .icon {
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    padding: .6rem;
+    margin-right: .2rem;
+    border-radius: 50%;
+}
+
+.icons .icon:hover {
+    background: #e6f2fa;
+}
+
+.tweet-input textarea {
+    resize: none;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    /* padding: 0 1rem; */
+    font-weight: 400;
+    border: none;
+    outline: none;
+    font-size: 1.27rem;
+}
+
+.tweet-input .post-tweet-button {
+    height: 40%;
+    padding: 1rem 0;
+}
+
+.post-tweet-button button {
+    color: black;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background-color: #8ED0F8;
+    padding: .8rem 0;
+    width: 16%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
 }
 
 .content .trends-container {
