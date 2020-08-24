@@ -17,6 +17,7 @@ body {
 body {
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 
@@ -304,6 +305,10 @@ body {
     color: #fff;
     font-weight: 700;
     font-size: 1rem;
+}
+
+.main-content .friend-post {
+    padding: .6rem .8rem;
 }
 
 .content .trends-container {
