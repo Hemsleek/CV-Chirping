@@ -314,7 +314,10 @@ body {
 
 .main-content .friend-post {
     padding: .6rem .8rem;
-    height: 30vh;
+    padding-bottom: 0;
+    height: 80vh;
+    width: 100%;
+    border-bottom: 1px solid var(--grey);
 }
 
 .main-content .friend-post:hover {
@@ -330,6 +333,7 @@ body {
 
 .friend-post .post-content {
     margin-left: 1.2rem;
+    height: 100%;
 }
 
 .friend-post .post-content {
@@ -339,7 +343,6 @@ body {
 .friend-post .post-content p {
     margin: 0;
     padding: 0;
-    /* width: 98%; */
     margin-bottom: .5rem;
 }
 
@@ -356,15 +359,13 @@ body {
 .friend-post .images-wrapper {
     flex-grow: 1;
     border-radius: 15px;
-    /* background-color: #F5F8FA; */
-    /* padding: .5rem 0; */
-    /* width: 100%; */
-    /* margin: 3.5rem 0 1rem; */
+    display: flex;
+    flex-direction: column;
     border: 1px solid var(--grey);
 }
 
 .friend-post .actions {
-    padding: 1.2rem 0;
+    padding: .8rem 0;
 }
 
 .actions span {
@@ -381,28 +382,29 @@ body {
 
 .image-text div img {
     margin-right: .3rem;
-    width: 20px;
-    height: 20px;
+    width: 100%;
+    height: 100%;
 }
 
 .friend-post .images {
-    grid-template: 'image1 image2'200px 'image3 image4' 200px /30px 30px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50%);
+    grid-gap: .1rem;
 }
 
-.friend-post .images .image1 {
-    grid-area: image1;
+.friend-post .images img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: top;
 }
 
-.friend-post .images .image2 {
-    grid-area: image2;
+.friend-post .images img[alt="image3"] {
+    border-bottom-left-radius: 15px;
 }
 
-.friend-post .images .image3 {
-    grid-area: image3;
-}
-
-.friend-post .images .image14 {
-    grid-area: image4;
+.friend-post .images img[alt="image4"] {
+    border-bottom-right-radius: 15px;
 }
 
 .content .trends-container {
