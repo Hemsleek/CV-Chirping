@@ -315,7 +315,7 @@ body {
 .main-content .friend-post {
     padding: .6rem .8rem;
     padding-bottom: 0;
-    height: 80vh;
+    height: fit-content;
     width: 100%;
     border-bottom: 1px solid var(--grey);
 }
@@ -326,8 +326,8 @@ body {
 }
 
 .friend-post img[alt='friend-img'] {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
 }
 
@@ -362,6 +362,7 @@ body {
     display: flex;
     flex-direction: column;
     border: 1px solid var(--grey);
+    height: 50vh;
 }
 
 .friend-post .actions {
@@ -370,6 +371,29 @@ body {
 
 .actions span {
     margin-right: 1.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.friend-post .cfc {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.friend-post .cfc:hover {
+    text-decoration: underline;
+}
+
+.actions span+span {
+    margin-left: 5rem;
+}
+
+.actions span:hover {
+    background-color: rgba(203, 220, 224, .5)
 }
 
 .friend-post .images-wrapper .image-text {
@@ -380,10 +404,10 @@ body {
     margin-bottom: .2rem;
 }
 
-.image-text div img {
+.friend-post .image-text div img {
     margin-right: .3rem;
-    width: 100%;
-    height: 100%;
+    width: 30px;
+    height: 30px;
 }
 
 .friend-post .images {
