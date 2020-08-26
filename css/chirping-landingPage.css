@@ -225,6 +225,9 @@ body {
     cursor: pointer;
     padding: 0 .8rem;
     border-bottom: 1px solid var(--grey);
+    position: fixed;
+    top: 0;
+    width: 42vw;
 }
 
 .header span {
@@ -248,6 +251,7 @@ body {
     padding: .6rem .8rem;
     height: 25vh;
     border-bottom: 10px solid #E6ECF0;
+    margin-top: 58px;
 }
 
 .main-content .user-tweet .profile-container {
